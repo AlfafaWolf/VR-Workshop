@@ -33,3 +33,8 @@ VR Workshop is a project dedicated to learn more about VR Development with Unity
   - [Documentation](https://docs.unity3d.com/Manual/class-LODGroup.html)
 - Lighting
   - [Unity Learn](https://learn.unity.com/tutorial/3-3-lighting?uv=2020.3&courseId=60183276edbc2a2e6c4c7dae&projectId=6018353dedbc2a0f634b7918#60233de9edbc2a43be274ca3)
+
+### Screen Fade
+
+- [Building a URP Screen Fader for Unity XR](https://youtu.be/OGDOC4ACfSE)
+- [Smooth Scene Fade Transition in VR](https://youtu.be/JCyJ26cIM0Y)
