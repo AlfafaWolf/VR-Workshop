@@ -153,6 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.VRWorkshop
     Standalone: com.DefaultCompany.VR-Workshop
   buildNumber:
     Standalone: 0
