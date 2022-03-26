@@ -1728,6 +1728,14 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1436636416}
+    - target: {fileID: 4285602969428607606, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6675148159892619693, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: m_EnableInputActions
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6699686631665636447, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -1778,6 +1786,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6699686632536163556, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6699686632536163560, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: m_EnableTurnAround
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6699686632536163561, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}

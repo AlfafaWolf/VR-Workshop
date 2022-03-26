@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5726889846301410573}
   - component: {fileID: 8596396681603426264}
   - component: {fileID: 8887600411168970038}
+  - component: {fileID: 5159171131064920095}
   m_Layer: 0
   m_Name: Teleport Ray
   m_TagString: Untagged
@@ -49,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UpdateTrackingType: 0
   m_EnableInputTracking: 1
-  m_EnableInputActions: 1
+  m_EnableInputActions: 0
   m_ModelPrefab: {fileID: 0}
   m_ModelParent: {fileID: 0}
   m_Model: {fileID: 0}
@@ -297,14 +298,14 @@ MonoBehaviour:
   m_SphereCastRadius: 0.1
   m_RaycastMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1
   m_RaycastTriggerInteraction: 1
   m_HitClosestOnly: 0
   m_HoverToSelect: 0
   m_HoverTimeToSelect: 0.5
-  m_EnableUIInteraction: 1
-  m_AllowAnchorControl: 1
-  m_UseForceGrab: 1
+  m_EnableUIInteraction: 0
+  m_AllowAnchorControl: 0
+  m_UseForceGrab: 0
   m_RotateSpeed: 180
   m_TranslateSpeed: 1
   m_AnchorRotateReferenceFrame: {fileID: 0}
@@ -353,7 +354,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.005
+    widthMultiplier: 0.02
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -364,8 +365,17 @@ LineRenderer:
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -447,7 +457,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   m_ValidColorGradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 0}
+    key0: {r: 0.11372549, g: 0.77254903, b: 0.35686275, a: 0.78431374}
     key1: {r: 0.11372549, g: 0.77254903, b: 0.35686275, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -508,6 +518,58 @@ MonoBehaviour:
   m_SnapThresholdDistance: 10
   m_Reticle: {fileID: 5284276755349027581}
   m_StopLineAtFirstRaycastHit: 1
+--- !u!114 &5159171131064920095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5762713497910418376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ada770a707544278b4eae7e84da930d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useCanceledPhaseInSelectAction: 0
+  selectAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Select
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 8c5db1ad-5bb8-4120-af0e-bd8e994067f7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  activateAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Activate
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 638733a7-33e9-4f12-9964-b3b64e693678
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  useCanceledPhaseInCancelAction: 0
+  cancelAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Cancel
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 3d671037-96a0-42fa-9ae6-3d51d02f4a44
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 0}
+  rayInteractor: {fileID: 0}
+  lineVisualInteractor: {fileID: 0}
 --- !u!1001 &3504038746762694939
 PrefabInstance:
   m_ObjectHideFlags: 0
