@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1546843831351578198}
   - component: {fileID: 1546843831351578194}
+  - component: {fileID: 7123891502219410304}
   m_Layer: 0
   m_Name: Teleportation Anchor
   m_TagString: Untagged
@@ -63,10 +64,34 @@ MonoBehaviour:
       m_Calls: []
   m_HoverEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7818850790048909593}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7818850790048909593}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_FirstSelectEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -119,6 +144,48 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_TeleportAnchorTransform: {fileID: 1546843831419034979}
+--- !u!114 &7123891502219410304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546843831351578195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73f36569d1c4c09b98adde9433f1e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onActivateTeleport:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 435448486442211314}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  onCancelTeleport:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 435448486442211314}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1546843831419034976
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,7 +240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546843831600494425}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 435448486442211325}
@@ -298,6 +365,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a5ab5b45d625742885628f336c4188, type: 3}
+--- !u!1 &435448486442211314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1404129483948229914, guid: d0a5ab5b45d625742885628f336c4188, type: 3}
+  m_PrefabInstance: {fileID: 1546843831393948392}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &435448486442211325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1404129483948229909, guid: d0a5ab5b45d625742885628f336c4188, type: 3}
@@ -364,6 +436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b99a75432701b8549aff262acfe134e0, type: 3}
+--- !u!1 &7818850790048909593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8788032618337692646, guid: b99a75432701b8549aff262acfe134e0, type: 3}
+  m_PrefabInstance: {fileID: 1546843831544423167}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7818850790048909590 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8788032618337692649, guid: b99a75432701b8549aff262acfe134e0, type: 3}

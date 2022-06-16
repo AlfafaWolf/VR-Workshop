@@ -430,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LineWidth: 0.02
   m_OverrideInteractorLineLength: 1
-  m_LineLength: 10
+  m_LineLength: 100
   m_WidthCurve:
     serializedVersion: 2
     m_Curve:
@@ -530,7 +530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ada770a707544278b4eae7e84da930d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useCanceledPhaseInSelectAction: 0
   selectAction:
     m_UseReference: 0
     m_Action:
@@ -550,19 +549,6 @@ MonoBehaviour:
       m_Type: 0
       m_ExpectedControlType: 
       m_Id: 638733a7-33e9-4f12-9964-b3b64e693678
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 0}
-  useCanceledPhaseInCancelAction: 0
-  cancelAction:
-    m_UseReference: 0
-    m_Action:
-      m_Name: Cancel
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 3d671037-96a0-42fa-9ae6-3d51d02f4a44
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
