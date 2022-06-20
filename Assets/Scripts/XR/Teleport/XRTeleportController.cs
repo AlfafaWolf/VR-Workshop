@@ -2,6 +2,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
+using UnityEngine.XR.OpenXR.Features.Interactions;
 using VRWorkshop.Extensions;
 
 namespace VRWorkshop.XR.Teleport
@@ -10,15 +11,21 @@ namespace VRWorkshop.XR.Teleport
     {
         [Header("Input")]
         [SerializeField] private InputActionProperty selectAction;
-        [Space]
+        [SerializeField] private InputActionProperty selectValueAction;
         [SerializeField] private InputActionProperty activateAction;
 
         [Header("Dependencies")]
         [SerializeField] private XRRayInteractor rayInteractor;
         [SerializeField] private XRInteractorLineVisual lineVisualInteractor;
-
-        private bool _isTeleportActive;
+        
         private InteractionLayerMask _interactionLayers;
+        private bool _isTeleportActive;
+        private bool _isPrimary2DAxisPressed;
+        private Vector2 _primary2DAxis;
+        private bool _isViveController;
+        private bool _wasTeleportActivated;
+
+        private const float TeleportSelectThreshold = 0.7f;
 
         private void Awake()
         {
@@ -40,28 +47,55 @@ namespace VRWorkshop.XR.Teleport
         {
             selectAction.EnableDirectAction();
             activateAction.EnableDirectAction();
-
-            selectAction.action.canceled += OnTeleportSelect;
+            selectValueAction.EnableDirectAction();
+            
             activateAction.action.performed += OnTeleportActivate;
             activateAction.action.canceled += OnTeleportCancel;
         }
 
         private void OnDisable()
         {
-            selectAction.action.canceled -= OnTeleportSelect;
             activateAction.action.performed -= OnTeleportActivate;
             activateAction.action.canceled -= OnTeleportCancel;
 
             selectAction.DisableDirectAction();
             activateAction.DisableDirectAction();
+            selectValueAction.DisableDirectAction();
         }
 
-        public void OnTeleportActivate(InputAction.CallbackContext callbackContext)
+        private void Update()
         {
-            EnableTeleport();
+            CheckTeleportSelectInput();
         }
-        
-        public void OnTeleportSelect(InputAction.CallbackContext callbackContext)
+
+        private void CheckTeleportSelectInput()
+        {
+            _isPrimary2DAxisPressed = selectAction.action?.IsPressed() ?? false;
+            _primary2DAxis = selectValueAction.action?.ReadValue<Vector2>() ?? Vector2.zero;
+            _isViveController = selectValueAction.action?.activeControl?.device is HTCViveControllerProfile.ViveController;
+
+            if (_primary2DAxis.y >= TeleportSelectThreshold && !_isViveController)
+            {
+                _wasTeleportActivated = true;
+            }
+            else if (_isPrimary2DAxisPressed && _isViveController)
+            {
+                if (_primary2DAxis.y >= TeleportSelectThreshold)
+                {
+                    _wasTeleportActivated = true;
+                }
+            }
+            else
+            {
+                if (_wasTeleportActivated)
+                {
+                    _wasTeleportActivated = false;
+                    PerformTeleport();
+                }
+            }
+        }
+
+        private void PerformTeleport()
         {
             if (!_isTeleportActive)
                 return;
@@ -76,8 +110,13 @@ namespace VRWorkshop.XR.Teleport
             
             if (!hasInteractionLayerOverlap)
                 return;
-
+            
             rayInteractor.interactionManager.SelectEnter(rayInteractor as IXRSelectInteractor, interactable as IXRSelectInteractable);
+        }
+
+        private void OnTeleportActivate(InputAction.CallbackContext callbackContext)
+        {
+            EnableTeleport();
         }
         
         private void OnTeleportCancel(InputAction.CallbackContext callbackContext)

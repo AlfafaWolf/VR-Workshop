@@ -1201,7 +1201,7 @@ PrefabInstance:
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: selectAction.m_Reference
       value: 
-      objectReference: {fileID: -7702492504407952382, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+      objectReference: {fileID: 4363040996728355091, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: activateAction.m_Reference
       value: 
@@ -1215,12 +1215,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_Reference
+      value: 
+      objectReference: {fileID: -7702492504407952382, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: useCanceledPhaseInCancelAction
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: useCanceledPhaseInSelectAction
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_Action.m_Id
+      value: d425bd4e-805a-49da-82ac-fb040841b41c
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_Action.m_Name
+      value: Select Value
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: cancelAction.m_Action.m_Interactions
@@ -1876,7 +1892,7 @@ PrefabInstance:
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: selectAction.m_Reference
       value: 
-      objectReference: {fileID: 6682613998115913436, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+      objectReference: {fileID: -9083605626808448676, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: activateAction.m_Reference
       value: 
@@ -1890,12 +1906,28 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_Reference
+      value: 
+      objectReference: {fileID: 6682613998115913436, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: useCanceledPhaseInCancelAction
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: useCanceledPhaseInSelectAction
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_Action.m_Id
+      value: bad09727-792f-438f-8b24-bd66a78e8c7b
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: selectValueAction.m_Action.m_Name
+      value: Select Value
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: cancelAction.m_Action.m_Interactions

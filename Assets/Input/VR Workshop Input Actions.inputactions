@@ -7,26 +7,26 @@
             "actions": [
                 {
                     "name": "Teleport Select",
-                    "type": "Value",
-                    "id": "2b167c35-0c5c-4468-b8b3-ade5c35d98e5",
-                    "expectedControlType": "",
+                    "type": "Button",
+                    "id": "b1f90753-a465-4ba2-bb92-dbdaad3ba15e",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Teleport Select Value",
+                    "type": "Value",
+                    "id": "2b167c35-0c5c-4468-b8b3-ade5c35d98e5",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "Sector(directions=1,pressPoint=0.7)",
                     "initialStateCheck": true
                 },
                 {
                     "name": "Teleport Activate",
                     "type": "Value",
                     "id": "bec66b72-e9e5-4abb-a723-e417cbd8188f",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "Sector(directions=1)",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Teleport Cancel",
-                    "type": "Value",
-                    "id": "b96284b8-fcd4-4829-9ca4-4843d15c65cd",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "Sector(directions=1)",
@@ -38,21 +38,21 @@
                     "name": "",
                     "id": "719a1c88-7a91-4dd0-b7f4-514c1716b282",
                     "path": "<OculusTouchController>{LeftHand}/thumbstick",
-                    "interactions": "Sector(directions=1,pressPoint=0.7)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Select",
+                    "action": "Teleport Select Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "923ec1fa-16f4-43a4-bd0b-21e7ec647b8c",
-                    "path": "<ViveController>{LeftHand}/trackpadClicked",
+                    "path": "<ViveController>{LeftHand}/trackpad",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Select",
+                    "action": "Teleport Select Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -60,10 +60,10 @@
                     "name": "",
                     "id": "01b76c87-e53c-48c5-9b17-90b9f59ea39b",
                     "path": "<ValveIndexController>{LeftHand}/thumbstick",
-                    "interactions": "Sector(directions=1,pressPoint=0.7)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Select",
+                    "action": "Teleport Select Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -80,12 +80,34 @@
                 },
                 {
                     "name": "",
-                    "id": "2a33fa42-20fe-43fc-adff-56c540f9efdf",
-                    "path": "<XRController>{LeftHand}/primary2DAxis",
+                    "id": "14d875aa-8cd6-4adb-8af3-2c5f697f810b",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstickClicked",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Cancel",
+                    "action": "Teleport Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a97f86bf-012b-4e4d-bbb5-43f69c6fe7fe",
+                    "path": "<ViveController>{LeftHand}/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a64c9ffa-1d20-4fe0-bfbd-8617fdef8a9c",
+                    "path": "<ValveIndexController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Select",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -97,26 +119,26 @@
             "actions": [
                 {
                     "name": "Teleport Select",
-                    "type": "Value",
-                    "id": "11972571-a694-476a-bfa7-b4745ee74118",
-                    "expectedControlType": "",
+                    "type": "Button",
+                    "id": "666a9ac5-f377-4943-b437-416e4c254a91",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Teleport Select Value",
+                    "type": "Value",
+                    "id": "11972571-a694-476a-bfa7-b4745ee74118",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "Sector(directions=1,pressPoint=0.7)",
                     "initialStateCheck": true
                 },
                 {
                     "name": "Teleport Activate",
                     "type": "Value",
                     "id": "01f123c8-721d-44a2-8f75-2cdd7c77e544",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "Sector(directions=1)",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "Teleport Cancel",
-                    "type": "Value",
-                    "id": "92152048-89dc-4eac-855c-639df3ccb724",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "Sector(directions=1)",
@@ -128,21 +150,21 @@
                     "name": "",
                     "id": "6afdfeff-5a52-4952-98fb-5cd296135e41",
                     "path": "<OculusTouchController>{RightHand}/thumbstick",
-                    "interactions": "Sector(directions=1,pressPoint=0.7)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Select",
+                    "action": "Teleport Select Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "3e16f6ee-5a38-48a9-945c-2c504475c089",
-                    "path": "<ViveController>{RightHand}/trackpadClicked",
+                    "path": "<ViveController>{RightHand}/trackpad",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Select",
+                    "action": "Teleport Select Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -150,10 +172,10 @@
                     "name": "",
                     "id": "3ff198bb-1339-4251-b063-72e961accbb8",
                     "path": "<ValveIndexController>{RightHand}/thumbstick",
-                    "interactions": "Sector(directions=1,pressPoint=0.7)",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Select",
+                    "action": "Teleport Select Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -170,12 +192,34 @@
                 },
                 {
                     "name": "",
-                    "id": "bc292ba0-904e-4db4-83c1-d1e7eb5d8171",
-                    "path": "<XRController>{RightHand}/primary2DAxis",
+                    "id": "9f0712d0-f12d-42d7-bcbb-4861721e90ec",
+                    "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Teleport Cancel",
+                    "action": "Teleport Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b174790-8886-4d6c-820b-2ebd4a34fb80",
+                    "path": "<ViveController>{RightHand}/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d1a459a1-a25a-4e5b-8e01-4ce6ed097113",
+                    "path": "<ValveIndexController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Select",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

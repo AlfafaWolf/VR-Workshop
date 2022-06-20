@@ -1721,6 +1721,22 @@ PrefabInstance:
       propertyPath: cancelActionIsInvertedActivate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1973455909223476165, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_Reference
+      value: 
+      objectReference: {fileID: -9083605626808448676, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 1973455909223476165, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_Action.m_Id
+      value: 9b8216ad-8cb1-4e57-a351-8a06de9e2c1e
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973455909223476165, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973455909223476165, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_Action.m_Name
+      value: Activate Press
+      objectReference: {fileID: 0}
     - target: {fileID: 4285602969428607606, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1739,7 +1755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6699686632536163556, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.83
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6699686632536163556, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1747,7 +1763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6699686632536163556, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.18
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6699686632536163556, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1796,6 +1812,22 @@ PrefabInstance:
     - target: {fileID: 8987066521680308254, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
       propertyPath: cancelActionIsInvertedActivate
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987066521680308254, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_Reference
+      value: 
+      objectReference: {fileID: 4363040996728355091, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 8987066521680308254, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_Action.m_Id
+      value: 4a813f22-6cf0-4acf-bb19-26af6b079475
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987066521680308254, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987066521680308254, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
+      propertyPath: activatePressAction.m_Action.m_Name
+      value: Activate Press
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc21d586b8ed4a344a66e76912126f41, type: 3}
