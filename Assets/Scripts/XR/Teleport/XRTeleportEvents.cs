@@ -9,9 +9,6 @@ namespace VRWorkshop.XR.Teleport
     {
         [SerializeField] private InputActionProperty leftHandActivateAction;
         [SerializeField] private InputActionProperty rightHandActivateAction;
-        [Space]
-        [SerializeField] private InputActionProperty leftHandCancelAction;
-        [SerializeField] private InputActionProperty rightHandCancelAction;
 
         [Header("Events")]
         public UnityEvent onActivateTeleport;
@@ -26,8 +23,6 @@ namespace VRWorkshop.XR.Teleport
         {
             leftHandActivateAction.EnableDirectAction();
             rightHandActivateAction.EnableDirectAction();
-            leftHandCancelAction.EnableDirectAction();
-            rightHandCancelAction.EnableDirectAction();
 
             leftHandActivateAction.action.performed += OnActivateLeftTeleport;
             rightHandActivateAction.action.performed += OnActivateRightTeleport;
@@ -46,8 +41,6 @@ namespace VRWorkshop.XR.Teleport
             
             leftHandActivateAction.DisableDirectAction();
             rightHandActivateAction.DisableDirectAction();
-            leftHandCancelAction.DisableDirectAction();
-            rightHandCancelAction.DisableDirectAction();
         }
 
         private void OnActivateLeftTeleport(InputAction.CallbackContext context)
