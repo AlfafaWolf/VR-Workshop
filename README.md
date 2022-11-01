@@ -9,6 +9,10 @@ VR Workshop is a project dedicated to learn more about VR Development with Unity
 
 ## Resources
 
+### Courses
+
+- [Unity Learn | VR Development Pathway](https://learn.unity.com/pathway/vr-development)
+
 ### Dedicated VR Youtube Channels
 
 - [Valem](https://www.youtube.com/c/ValemVR) & [Valem Tutorials](https://www.youtube.com/channel/UC-BligqNSwG0krJDfaPhytw)
