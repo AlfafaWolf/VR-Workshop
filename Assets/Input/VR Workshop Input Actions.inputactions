@@ -31,6 +31,24 @@
                     "processors": "",
                     "interactions": "Sector(directions=1)",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Primary 2D Axis Press",
+                    "type": "Button",
+                    "id": "93561ae1-aacd-447c-99ce-5e469a03b5f4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Primary 2D Axis Value",
+                    "type": "Value",
+                    "id": "2cbbb505-fc08-4ece-bc04-13cfd28f565a",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -110,6 +128,50 @@
                     "action": "Teleport Select",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0e540a1-9136-46e2-a589-7e604122f984",
+                    "path": "<ViveController>{LeftHand}/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bca27587-d7e7-4617-bb48-bca708c47ac1",
+                    "path": "<ValveIndexController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6ae3d33d-1b7b-47b1-8bfe-d59d22533f08",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "330b1c69-44e1-41e0-9054-5245a584ae2a",
+                    "path": "<XRController>{LeftHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -142,6 +204,24 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "Sector(directions=1)",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Primary 2D Axis Press",
+                    "type": "Button",
+                    "id": "5eb7e9ff-7bab-4714-9797-89f496390f52",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Primary 2D Axis Value",
+                    "type": "Value",
+                    "id": "f50aebee-4635-41ff-999f-5a3906f4fa70",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
                     "initialStateCheck": true
                 }
             ],
@@ -220,6 +300,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "Teleport Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7b9ce610-818a-4363-96e4-efa761490489",
+                    "path": "<ViveController>{RightHand}/trackpadClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "22e85476-e204-4a7a-81b1-cf7a9539182f",
+                    "path": "<ValveIndexController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e205bb35-a990-4427-b86c-45f703c2d4c3",
+                    "path": "<OculusTouchController>{RightHand}/thumbstickClicked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e8c88ecd-65a7-4c06-a8bc-856eed37d455",
+                    "path": "<XRController>{RightHand}/primary2DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Primary 2D Axis Value",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -1153,30 +1153,6 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -8799648665324297551, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
-  leftHandCancelAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Left Hand Cancel
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 2414bee1-126d-44c0-ab94-b82cc3ee7669
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -744171547325428693, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
-  rightHandCancelAction:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Hand Cancel
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 16a657b5-428a-46a0-823f-838a3ea78828
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -6079684289885126833, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
   onActivateTeleport:
     m_PersistentCalls:
       m_Calls: []
@@ -1202,6 +1178,10 @@ PrefabInstance:
       propertyPath: selectAction.m_Reference
       value: 
       objectReference: {fileID: 4363040996728355091, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: controllerCharacteristics
+      value: 320
+      objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: activateAction.m_Reference
       value: 
@@ -1243,8 +1223,40 @@ PrefabInstance:
       value: Sector(directions=1)
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_Reference
+      value: 
+      objectReference: {fileID: -3570151113054722615, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_Reference
+      value: 
+      objectReference: {fileID: 6649354441661217501, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: activateAction.m_Action.m_Interactions
       value: Sector(directions=1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_Action.m_Id
+      value: 341551e0-6134-462a-9f8e-3c073f098347
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_Action.m_Id
+      value: 9c402255-d407-40da-be5d-06f5d05a5464
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_Action.m_Name
+      value: Primary 2D Axis Press
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_Action.m_Name
+      value: Primary 2D Axis Value
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: cancelAction.m_Action.m_ExpectedControlType
@@ -1894,6 +1906,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -9083605626808448676, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: controllerCharacteristics
+      value: 576
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: activateAction.m_Reference
       value: 
       objectReference: {fileID: -8799648665324297551, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
@@ -1934,8 +1950,40 @@ PrefabInstance:
       value: Sector(directions=1)
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_Reference
+      value: 
+      objectReference: {fileID: 3600340549444683173, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_Reference
+      value: 
+      objectReference: {fileID: 5971335683014557294, guid: 7e3d7cd12ea39a441a3aec6119bc8f65, type: 3}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: activateAction.m_Action.m_Interactions
       value: Sector(directions=1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_Action.m_Id
+      value: 004a5f9f-5075-4d7d-8086-2ba89e71e80e
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_Action.m_Id
+      value: fb6df353-13db-4472-8694-5dc806713213
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisPressAction.m_Action.m_Name
+      value: Primary 2D Axis Press
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
+      propertyPath: primary2DAxisValueAction.m_Action.m_Name
+      value: Primary 2D Axis Value
       objectReference: {fileID: 0}
     - target: {fileID: 5159171131064920095, guid: 9685035b0d7bd174cb27d521804b5637, type: 3}
       propertyPath: cancelAction.m_Action.m_ExpectedControlType
